@@ -1,0 +1,84 @@
+:root{
+    --branco: #FFFAFF;
+    --azul: #0A2463;
+    --rosa: #D8315B;
+}
+body{
+    background-color: var(--azul);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--branco);
+    flex-direction: column;
+    text-align: center;
+}
+.hour, .salutation{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    color: var(--rosa);
+    margin: 10px 0px;
+}
+.hour{
+    font-size: 50px;
+    font-weight: bold;
+}
+.salutation{
+    font-size: 40px;
+    font-weight: bold;
+}
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 900px){
+    .container{
+        width: 90%;
+        height: 90vh;
+    }
+    .circle{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1500px){
+    .circle{
+        width: 320px;
+        height: 320px;
+    }
+}
+@media only screen and (min-width: 1800px) and (max-width: 2400px){
+    .hour{
+        font-size: 5rem;
+    }
+    .salutation{
+        font-size: 4rem;
+    }
+
+}
+@media only screen and (min-width: 2401px){
+    .circle{
+        width: 500px;
+        height: 500px;
+    }
+    .hour{
+        font-size: 5.2rem;
+    }
+    .salutation{
+        font-size: 4rem;
+    }
+}
